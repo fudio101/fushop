@@ -4,6 +4,12 @@
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(
+        var(--header-height) - var(--navbar-height)
+    );
 }
 
 * {
@@ -75,7 +81,7 @@ html {
     margin: auto;
     z-index: 1;
     position: relative;
-    animation: growth linear .15s;
+    animation: growth linear 0.15s;
 }
 
 .btn {
